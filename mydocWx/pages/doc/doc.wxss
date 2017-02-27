@@ -1,0 +1,123 @@
+@import "../../wxParse/wxParse.wxss";
+
+.doc-view {
+  height: 100vh;
+}
+
+.mask-chapters-wrapper {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.20);
+}
+
+.mask-chapters {
+  display: block;
+  box-shadow: black 0px 0px 5px;
+  background-color: #fff;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 25%;
+  width: 95%;
+  padding: 3px;
+  z-index: 20;
+}
+
+.cancel {
+  float: right;
+}
+
+.control-bottom {
+  position: fixed;
+  bottom: 0vw;
+  left: 0vw;
+  /*height: 7vw;*/
+  z-index: 20;
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+}
+
+.control-bottom .btn-chapters-menu {
+  display: block;
+  width: 49.5%;
+  line-height: 36px;
+  height: 36px;
+  text-align: center;
+  background-color: lightgray;
+  border: 0.5vw solid #fff;
+}
+
+.control-bottom .btn-chapters-addbookmarks {
+  display: block;
+  width: 49.5%;
+  line-height: 36px;
+  height: 36px;
+  text-align: center;
+  background-color: lightgray;
+  border: 0.5vw solid #fff;
+}
+/*.control-bottom .btn-chapters-addbookmarks:active{
+  background-color: deepskyblue;
+}*/
+
+.control {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-color: #000;*/
+}
+
+.previous {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 33.3%;
+  height: 100%;
+  /*background-color: red;*/
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  z-index: 10;
+}
+
+/*.previous:hover{
+  background-color: lightblue;
+   
+}*/
+
+/*.middle {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 33.3%;
+  width: 33.3%;
+  height: 100%;
+  background-color: green;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}*/
+
+.next {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 33.3%;
+  height: 100%;
+  /*background-color: blue;*/
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  z-index: 10;
+}
+.btn-hover:active{
+  background-color: deepskyblue;
+}

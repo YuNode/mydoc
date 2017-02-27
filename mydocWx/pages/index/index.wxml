@@ -1,0 +1,7 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view class="doclist">
+    <text class="doc-item" wx:for="{{docs}}" bindtap="select" data-doc_name="{{item.doc_name}}">{{item.doc_name}}</text>
+  </view>
+</view>

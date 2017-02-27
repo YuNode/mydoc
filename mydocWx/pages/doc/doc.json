@@ -1,0 +1,21 @@
+{
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "../images/home.png",
+        "iconPath": "../images/home.png",
+        "pagePath": "/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "../images/my.png",
+        "iconPath": "../images/my.png",
+        "pagePath": "/user/user",
+        "text": "我的"
+      }
+    ]
+  }
+}

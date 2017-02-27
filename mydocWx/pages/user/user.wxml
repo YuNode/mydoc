@@ -1,0 +1,46 @@
+<view wx:if="{{isLogin}}">
+  <text>我的书签：</text>
+  <view wx:if="{{isNoBookmarks}}"> 
+     <text>无书签</text>
+  </view>
+  <view wx:else class="bookmarklist">
+    <view class="bookmark-item" wx:for="{{bookmarks}}">
+      <view bindtap="selectBookmarkItem" data-docchapter="{{item.docChapter}}" data-docname="{{item.docName}}" class="item-display">
+        {{item.docChapter}}({{item.docName}})</view>
+      <view bindtap="delBookmarkItem" data-bookmarkid="{{item._id}}" class="del-item">删除</view>
+    </view>
+  </view>
+  <view class="logout">
+    <text bindtap="logout">退出</text>
+  </view>
+</view>
+<view wx:else>
+  <view wx:if="{{isShowReg}}" class="reg">
+    <view class="tit">
+      <text>注册账号</text>
+    </view>
+    <view>
+      <form bindsubmit="regFormSubmit">
+        <input name="regaccount" placeholder="手机号码或邮箱" auto-focus/>
+        <input name="regpassword" password placeholder="输入密码" />
+        <input name="regpassword1" password placeholder="确认密码" />
+        <button formType="submit">注册账号</button>
+      </form>
+    </view>
+    <text class="tologin" bindtap="tologin">登录</text>
+    <text class="reg-tip" bindtap="tologin"></text>
+  </view>
+  <view wx:else class="login">
+    <view class="tit">
+      <text>登录</text>
+    </view>
+    <view>
+      <form bindsubmit="loginFormSubmit">
+        <input name="login_account" placeholder="手机号码或邮箱" auto-focus/>
+        <input name="login_password" password placeholder="密码" />
+        <button formType="submit">登录</button>
+      </form>
+    </view>
+    <text class="toreg" bindtap="toReg">注册账号</text>
+  </view>
+</view>

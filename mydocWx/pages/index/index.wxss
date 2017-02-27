@@ -1,0 +1,11 @@
+/**index.wxss**/
+.doc-item{
+    display: block;
+    margin: 2vw 0 2vw 2vw;
+    padding-left: 1vw;
+    border-left: 2px solid limegreen;
+    height: 6vw;
+    line-height: 6vw;
+        width: 80%;
+    overflow: hidden;
+}

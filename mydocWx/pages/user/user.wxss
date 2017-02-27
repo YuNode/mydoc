@@ -1,0 +1,57 @@
+.tit {
+  text-align: center;
+}
+
+.login form {
+}
+
+.toreg {
+  float: right;
+  color: red;
+}
+
+.tologin {
+  float: right;
+  color: red;
+}
+
+.bookmark-item {
+  display: block;
+  margin: 2vw 0 2vw 2vw;
+  padding-left: 1vw;
+  border-left: 2px solid limegreen;
+  height: 6vw;
+  line-height: 6vw;
+}
+
+.bookmark-item .item-display {
+  width: 85%;
+  overflow: hidden;
+  height: 6vw;
+  line-height: 6vw;
+  float: left;
+}
+
+.bookmark-item .del-item {
+  height: 6vw;
+  line-height: 6vw;
+  float: right;
+  margin-right: 3vw;
+  color: red;
+}
+
+.logout {
+  position: fixed;
+  bottom: 6px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  left: 45%;
+}
+
+.logout text {
+  display: block;
+  color: blue;
+  text-decoration: underline;
+}

@@ -1,0 +1,27 @@
+<import src="../../wxParse/wxParse.wxml" />
+<scroll-view scroll-y="true" class="doc-view" scroll-top="{{scrollTop}}">
+  <view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+</scroll-view>
+<view wx:if="{{chaptersShow}}" class="mask-chapters-wrapper">
+  <view class="mask-chapters">
+    <view>
+      <text class="tit">章节目录</text>
+      <icon class="cancel" type="cancel" size="24" bindtap="closeChapters" />
+    </view>
+    <view wx:for="{{chapters}}" bindtap="selectChapter" data-chapter_name="{{item.chapter_name}}">{{item.chapter_name}} </view>
+  </view>
+</view>
+<view wx:else class="control">
+  <view class="control-bottom">
+    <view class="btn-chapters-addbookmarks btn-hover" bindtap="addToBookmarks">添加到书签</view>  
+    <view class="btn-chapters-menu btn-hover" bindtap="showChapter">目录</view>
+  </view>
+
+  <!--翻页，点击屏幕左边和右边-->
+  <view bindtap="btnPrevious" class="previous btn-hover"></view>
+
+  <!--<view class="middle"></view>-->
+  <view bindtap="btnNext" class="next btn-hover"></view>
+</view>
