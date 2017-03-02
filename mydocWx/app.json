@@ -8,7 +8,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "开发文档",
+    "navigationBarTitleText": "文档阅读",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
