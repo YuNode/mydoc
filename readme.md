@@ -1,4 +1,4 @@
-## 文档阅读微信小程序
+## 文档阅读微信小程序,客户端+后端
 客户端：微信小程序
 
 后端：node.js+koa2+monogodb(Mongoose),restful_api
